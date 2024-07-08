@@ -9,14 +9,14 @@ resource "aws_instance" "DockerInstance" {
   key_name               = aws_key_pair.ec2_key.key_name
   user_data              = file("install.sh")
   root_block_device {
-    volume_size = 30  
-    volume_type = "gp2"  
+    volume_size = 30
+    volume_type = "gp2"
   }
 
   tags = {
     Name = "docker-instance"
   }
- 
+
 }
 
 
