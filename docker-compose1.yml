@@ -24,7 +24,7 @@ services:
         - MYSQL_ROOT_PASSWORD=db_password
         - MYSQL_USER=wp_user
         - MYSQL_PASSWORD=wp_password
-        - MYSQL_DATABASE= webserver
+        - MYSQL_DATABASE=webserver
     networks:
         - web
     command: '--default-authentication-plugin=mysql_native_password'

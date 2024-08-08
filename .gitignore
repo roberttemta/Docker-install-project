@@ -5,6 +5,10 @@
 
 docker-keypair.pem
 
+.gitignore
+
+.infracost 
+
 # Local .terraform directories
 **/.terraform/*
 
